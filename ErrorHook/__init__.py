@@ -1,1 +1,1 @@
-from ErrorHook.lib import *
+from lib import *

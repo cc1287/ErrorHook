@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ErrorHook
-Version: 1.1
+Version: 1.4
 Summary: Hook your Error.
 Home-page: https://gitee.com/cc1287/error-hook
 Author: cc1287
@@ -63,3 +63,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+#### 更新日志
+- 1.2
+> 让导入更便捷，更改导入名称从`ErrorHook`为`errorhook`
+- 1.1
+> 更新界面-退出按钮
+- 1.0
+> update

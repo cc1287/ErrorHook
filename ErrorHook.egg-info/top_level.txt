@@ -1,1 +1,1 @@
-ErrorHook
+errorhook
