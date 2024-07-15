@@ -9,6 +9,9 @@ import traceback
 from datetime import datetime
 
 def exp(exc_type, exc_value, exc_traceback):
+    if(exc_type.__name__=='KeyboardInterrupt'):
+        return
+    
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     print(f"Time: [{current_time}]")
@@ -44,7 +47,9 @@ def exp(exc_type, exc_value, exc_traceback):
         tkinter.Label(info,text='错误信息').pack(anchor='w')
         tkinter.Entry(info,textvariable=inf,state='readonly').pack(fill='x',padx=1)
         info.pack(padx=6,fill='x')
-        tkinter.ttk.Button(root,text='退出程序',command=root.destroy).pack(fill='x',side='right',padx=6)
+        exits=tkinter.ttk.Button(root,text='退出程序',command=root.destroy)
+        exits.pack(fill='x',side='right',padx=6)
+        exits.focus_set()
         root.update()
         typ.set(exc_type.__name__)
         inf.set(exc_value)

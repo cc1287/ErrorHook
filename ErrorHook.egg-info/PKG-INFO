@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ErrorHook
-Version: 1.6
+Version: 2.0.1
 Summary: Hook your Error.
 Home-page: https://gitee.com/cc1287/error-hook
 Author: cc1287
@@ -18,7 +18,8 @@ Requires-Dist: datetime
 - 输出错误到控制台
 - 输出错误到文件（可选，默认开启）
 - 显示错误窗口（可选，默认开启）
-Code by: cc1287
+
+**Code by: cc1287**
 
 ### 示例
 
@@ -65,8 +66,16 @@ SOFTWARE.
 ```
 
 #### 更新日志
-- 1.2
-> 让导入更便捷，更改导入名称从`ErrorHook`为`errorhook`
+- 2.0.1
+> 更改简介
+- 2.0
+> 将名字又改了回来，兼容性问题
+
+> 移除了对`KeyboardInterrupt`的捕获
+
+> 现在将自动将焦点移至“退出”按钮
+- 1.2~1.6
+> ~~让导入更便捷，更改导入名称从`ErrorHook`为`errorhook`~~（已在2.0删除）
 - 1.1
 > 更新界面-退出按钮
 - 1.0
