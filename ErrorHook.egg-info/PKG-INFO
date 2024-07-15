@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ErrorHook
-Version: 2.0.1
+Version: 2.0.2
 Summary: Hook your Error.
 Home-page: https://gitee.com/cc1287/error-hook
 Author: cc1287
@@ -66,6 +66,8 @@ SOFTWARE.
 ```
 
 #### 更新日志
+- 2.0.2
+> 现在可以按回车键（Enter）退出
 - 2.0.1
 > 更改简介
 - 2.0
