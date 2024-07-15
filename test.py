@@ -1,4 +1,4 @@
-import errorhook
+import ErrorHook
 # ErrorHook.init()
 
 # print(1/0)

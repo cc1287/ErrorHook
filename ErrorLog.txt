@@ -13,3 +13,8 @@ Traceback (most recent call last):
   File "d:\Python_self_compiled_module\ErrorHook\test.py", line 6, in <module>
     raise BaseException('I am a Error.')
 BaseException: I am a Error.
+[2024-07-15 14:55:54] Unhandled exception occurred:
+Traceback (most recent call last):
+  File "d:\Python_self_compiled_module\ErrorHook\test.py", line 6, in <module>
+    raise BaseException('I am a Error.')
+BaseException: I am a Error.

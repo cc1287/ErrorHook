@@ -9,10 +9,3 @@ ErrorHook.egg-info/SOURCES.txt
 ErrorHook.egg-info/dependency_links.txt
 ErrorHook.egg-info/requires.txt
 ErrorHook.egg-info/top_level.txt
-errorhook/__init__.py
-errorhook/lib.py
-errorhook.egg-info/PKG-INFO
-errorhook.egg-info/SOURCES.txt
-errorhook.egg-info/dependency_links.txt
-errorhook.egg-info/requires.txt
-errorhook.egg-info/top_level.txt
