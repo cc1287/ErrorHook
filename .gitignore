@@ -1,2 +1,3 @@
 ErrorHook/__pycache__/
-ErrorHook.txt
+ErrorHook/ErrorLog.txt
+info.txt
