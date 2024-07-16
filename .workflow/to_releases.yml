@@ -57,7 +57,7 @@ stages:
         name: publish_release_artifacts
         displayName: 发布
         dependArtifact: output
-        version: 2.2.5.1
+        version: 2.2.6.0
         autoIncrement: true
         notify: []
         strategy:
