@@ -43,11 +43,11 @@ stages:
             content:
               - repository
               - pipeline
-              - stage
               - task
-              - operator
               - branch
               - detail
+              - stage
+              - operator
             type: feishu
         strategy:
           retry: '0'
@@ -79,9 +79,11 @@ stages:
             content:
               - repository
               - pipeline
-              - stage
               - task
               - detail
+              - stage
+              - operator
+              - branch
             type: feishu
         strategy:
           retry: '0'
