@@ -10,6 +10,8 @@ triggers:
     paths:
       precise:
         - dist/
+variables:
+  PYPI_KEY: pypi-AgEIcHlwaS5vcmcCJDA3MTlmNzIwLThhMGQtNDgxOS05NzBlLTEzY2ZlODEwNjg0MAACKlszLCIwYWYyNmM2Ni03MjBhLTQxY2EtYjFkOS00NzMzYTg3NzM2ZjQiXQAABiBUEGqEU1xsOpyIGbMdzmYLyEOIvkjOFrHujzWFysdv7Q
 stages:
   - name: stage-494a5a4f
     displayName: releases
@@ -17,12 +19,24 @@ stages:
     trigger: auto
     executor: []
     steps:
-      - step: publish@release_artifacts
-        name: publish_release_artifacts
-        displayName: 发布
-        dependArtifact: output
-        version: 2.2.4.0
-        autoIncrement: true
+      - step: build@python
+        name: build_python
+        displayName: Python 构建
+        pythonVersion: '3.9'
+        commands:
+          - pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+          - '# 可以使用pip下载依赖'
+          - '# pip install --user -r requirements.txt'
+          - sha256sum setup.py | cut -c 1-64 > ErrorHook/hash.file
+          - python -m pip install --upgrade build
+          - python -m build
+        artifacts:
+          - name: BUILD_ARTIFACT
+            path:
+              - dist/
+        caches: []
         notify: []
         strategy:
           retry: '0'
+strategy:
+  blocking: true
