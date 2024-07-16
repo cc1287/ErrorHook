@@ -27,9 +27,7 @@ stages:
           - '# pip install --user -r requirements.txt'
           - sha256sum setup.py | cut -c 1-64 > ErrorHook/hash.file
           - python -m pip install --upgrade build
-          - python -m pip install twine
           - python -m build
-          - python -m twine upload dist/* --password pypi-AgEIcHlwaS5vcmcCJDA3MTlmNzIwLThhMGQtNDgxOS05NzBlLTEzY2ZlODEwNjg0MAACKlszLCIwYWYyNmM2Ni03MjBhLTQxY2EtYjFkOS00NzMzYTg3NzM2ZjQiXQAABiBUEGqEU1xsOpyIGbMdzmYLyEOIvkjOFrHujzWFysdv7Q
         artifacts:
           - name: BUILD_ARTIFACT
             path:
