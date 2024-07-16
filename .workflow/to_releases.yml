@@ -35,14 +35,20 @@ stages:
             path:
               - dist/
         caches: []
-        notify: []
-        strategy:
-          retry: '0'
-      - step: sc@opensca
-        name: open_sca
-        displayName: OpenSCA 开源组件检测
-        detectPath: ErrorHook/clib.py
-        notify: []
+        notify:
+          - certificate: b3b564d0-256b-013d-545e-5a5752d4d677
+            events:
+              - success
+              - fail
+            content:
+              - repository
+              - pipeline
+              - stage
+              - task
+              - operator
+              - branch
+              - detail
+            type: feishu
         strategy:
           retry: '0'
   - name: stage-cb1703e2
@@ -65,7 +71,18 @@ stages:
         dependArtifact: output
         version: 2.2.8.0
         autoIncrement: true
-        notify: []
+        notify:
+          - certificate: b3b564d0-256b-013d-545e-5a5752d4d677
+            events:
+              - success
+              - fail
+            content:
+              - repository
+              - pipeline
+              - stage
+              - task
+              - detail
+            type: feishu
         strategy:
           retry: '0'
         dependsOn: publish_general_artifacts
