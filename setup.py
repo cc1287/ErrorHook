@@ -5,7 +5,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
 
 setuptools.setup(
     name="ErrorHook",
-    version="2.2.4",
+    version="2.2.5",
     author="cc1287",
     author_email="bilibili_cc1287@126.com",
     description="Hook your Error.",
