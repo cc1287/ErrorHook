@@ -1,9 +1,3 @@
-'''## 异常处理
-全局捕捉异常，并
-- 在控制台打印
-- 输出到文件
-- 显示错误窗口(使用内置tkinter, 可关闭)
-### code by: cc1287'''
 import sys,tkinter,tkinter.ttk,base64
 import traceback
 from datetime import datetime

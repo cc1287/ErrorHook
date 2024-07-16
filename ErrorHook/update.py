@@ -1,5 +1,5 @@
 import requests,sys,os
-def check():
+def get():
     print('正在检查更新')
     new_hash=requests.get('https://gitee.com/cc1287/error-hook/raw/master/ErrorHook/hash.file').text.replace(' ','')
     with open(os.path.dirname(sys.executable)+'\\Lib\\site-packages\\ErrorHook\\hash.file') as f:
