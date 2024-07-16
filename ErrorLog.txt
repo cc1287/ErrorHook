@@ -171,3 +171,25 @@ Traceback (most recent call last):
   File "d:\Python_self_compiled_module\ErrorHook\ErrorHook\lib.py", line 81, in <module>
     1/0
 ZeroDivisionError: division by zero
+[2024-07-16 08:00:04] Unhandled exception occurred:
+Traceback (most recent call last):
+  File "d:\Python_self_compiled_module\ErrorHook\test.py", line 14, in <module>
+    ccc()
+  File "d:\Python_self_compiled_module\ErrorHook\test.py", line 11, in ccc
+    bbb()
+  File "d:\Python_self_compiled_module\ErrorHook\test.py", line 9, in bbb
+    aaa()
+  File "d:\Python_self_compiled_module\ErrorHook\test.py", line 7, in aaa
+    raise BaseException('I am a Error.')
+BaseException: I am a Error.
+[2024-07-16 08:00:23] Unhandled exception occurred:
+Traceback (most recent call last):
+  File "d:\Python_self_compiled_module\ErrorHook\test.py", line 14, in <module>
+    ccc()
+  File "d:\Python_self_compiled_module\ErrorHook\test.py", line 11, in ccc
+    bbb()
+  File "d:\Python_self_compiled_module\ErrorHook\test.py", line 9, in bbb
+    aaa()
+  File "d:\Python_self_compiled_module\ErrorHook\test.py", line 7, in aaa
+    raise BaseException('I am a Error.')
+BaseException: I am a Error.

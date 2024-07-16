@@ -17,7 +17,7 @@ import ErrorHook
 raise BaseException('I am a Error.')
 ```
 
-![错误窗口样式](https://gitee.com/cc1287/error-hook/raw/master/assets/image-20240715103626507.png)
+![](https://gitee.com/cc1287/error-hook/raw/master/assets/202407160800255.png)
 
 ### 安装
 
