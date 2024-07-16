@@ -10,8 +10,6 @@ triggers:
     paths:
       precise:
         - setup.py
-variables:
-  PYPI_KEY: pypi-AgEIcHlwaS5vcmcCJDA3MTlmNzIwLThhMGQtNDgxOS05NzBlLTEzY2ZlODEwNjg0MAACKlszLCIwYWYyNmM2Ni03MjBhLTQxY2EtYjFkOS00NzMzYTg3NzM2ZjQiXQAABiBUEGqEU1xsOpyIGbMdzmYLyEOIvkjOFrHujzWFysdv7Q
 stages:
   - name: stage-494a5a4f
     displayName: python
@@ -31,7 +29,7 @@ stages:
           - python -m pip install --upgrade build
           - python -m pip install twine
           - python -m build
-          - python -m twine upload dist/* --password ${PYPI-KEY}
+          - python -m twine upload dist/* --password pypi-AgEIcHlwaS5vcmcCJDA3MTlmNzIwLThhMGQtNDgxOS05NzBlLTEzY2ZlODEwNjg0MAACKlszLCIwYWYyNmM2Ni03MjBhLTQxY2EtYjFkOS00NzMzYTg3NzM2ZjQiXQAABiBUEGqEU1xsOpyIGbMdzmYLyEOIvkjOFrHujzWFysdv7Q
         artifacts:
           - name: BUILD_ARTIFACT
             path:
