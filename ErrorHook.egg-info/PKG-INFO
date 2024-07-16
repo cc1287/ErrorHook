@@ -1,13 +1,14 @@
 Metadata-Version: 2.1
 Name: ErrorHook
-Version: 2.2.2
+Version: 2.2.3
 Summary: Hook your Error.
 Home-page: https://gitee.com/cc1287/error-hook
 Author: cc1287
 Author-email: bilibili_cc1287@126.com
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
-Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: datetime

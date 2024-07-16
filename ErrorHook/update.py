@@ -2,7 +2,7 @@ import requests,sys,os
 def check():
     print('正在检查更新')
     new_hash=requests.get('https://gitee.com/cc1287/error-hook/raw/master/ErrorHook/hash.file').text
-    with open(os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])),'hash.file'),'r') as f:
+    with open(os.path.dirname(sys.executable)+'\\Lib\\site-packages\\ErrorHook\\hash.file') as f:
         old_hash=f.read()
     print('检查完成')
     if old_hash!=new_hash:
